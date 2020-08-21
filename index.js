@@ -24,12 +24,12 @@ var dtdob = document.getElementById('dob');
         displayval.innerText = names[weekday].Male;
     }
     else if(femaleselected){
-        
+
         displayval.innerText = names[weekday].Female;
 
     }
     else{
-        displayval.innerText = "Gender not selected";
+        displayval.innerText = "Error!Gender not selected";
     }
 
 

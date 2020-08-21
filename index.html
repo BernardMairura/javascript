@@ -12,7 +12,8 @@
         <h2><u>AKAN NAMES</u></h2>
         <h3 class="text-success">Did you know that you can use Akan names to know the day you were born?</h3>
         <p>
-          Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.  
+          Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.
+          The table below shows a display of the seven days in a week and the corresponding names assigned to them.  
         </p>
 
         <table class="table table-bordered">
@@ -62,16 +63,16 @@
             
           </tbody>
         </table>
-        <a href="flexbox.html">click me</a>
         <form onsubmit="event.preventDefault(); displayVisitor();">
           <table>
-            <table>Go ahead, give it a try.</table></br>
+            <table><strong class="text-success">Would you like to know the day you were born and the Akan name it represents?</strong></br>
+              <em class="text-success">Go ahead, give it a try.</em></table></br>
             <tr>
               <td>
                 <label for="fname">First Name:</label></br>
-                <input type="text" id="fname" name="fname"></br>
+                <input type="text" id="fname" name="fname" value="" maxlength="15"></br>
                 <label for="fname">Last Name:</label></br>
-                <input type="text" id="lname" name="lname"></br>
+                <input type="text" id="lname" name="lname"value="" maxlength="15"></br>
               </td>
             </tr>
           </table></br>    
@@ -85,7 +86,7 @@
               </dt>          
             </tr>    
           </table>    
-          <input type="date" oninvalid="alert('Please eneter the correct date format!');" name="datw" id="dob" required>
+          <input type="date" oninvalid="alert('Please enter the correct date format!');" name="date" id="dob" required>
           <input type="submit" value="Submit">
           <input type="reset">
         </form></br>
@@ -93,7 +94,10 @@
           <span id="showmssg"></span>
         </p>  
         <script src="index.js"></script>
+        <a href="flexbox.html">
+          <h3 border=1 align="center" font-size="20">Flexbox:<em><u>click here</u></em></h3>
+        </a>  
     </div>
-  </div>  
+  </div>
   </body>
 <html>
