@@ -1,15 +1,62 @@
+
+
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+body{font-family: 'Courier New', Courier, monospace;
+
+}
+
+header{
+    background-color: #fffff1;
+    padding: 30px;
+    align-content: center;
+    font-size: 35px;
+}
+.row{
+    display: -webkit-box;
+    display: flex;
+}
+
+.sage{
+    padding: 10px;
+    height: 300px;
+}
+
+.sage .erp{
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.sage .vip {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+}
+
+.footer{
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+@media(max-width: 600px){
+    .row{
+        -webkit-flex-directio: colum;
+        flex-direction: column;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
   }
   
-  .menu-container {
-    color: #fff;
-    background-color: #5995DA;  /* Blue */
-    padding: 20px 0;
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
   }
-  
-  .menu {
-    border: 1px solid #fff;  /* For debugging */
-    width: 900px;
