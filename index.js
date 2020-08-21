@@ -1,25 +1,49 @@
 
-var names = { Sunday : { Male : 'Kwasi', Female : 'Akosua' },
-             Monday : { Male : 'Kwado', Female : 'Adwoa' },
-             Tuesday : { Male : 'Kwabena', Female : 'Abenna' },
-             Wednesay: { Male : 'Kwaku', Female : 'Akua' },
-             Thursady : { Male : 'Yaw', Female : 'Yaa' },
-             Friday : { Male : 'Kofi', Female : 'Afua' },
-             Saturday: { Male : 'Kwame', Female : 'Ama' },
+var names = [
+     { Male : 'Kwasi', Female : 'Akosua' },
+             { Male : 'Kwado', Female : 'Adwoa' },
+             { Male : 'Kwabena', Female : 'Abenna' },
+            { Male : 'Kwaku', Female : 'Akua' },
+             { Male : 'Yaw', Female : 'Yaa' },
+              { Male : 'Kofi', Female : 'Afua' },
+              { Male : 'Kwame', Female : 'Ama' }
 
-}
+]
 var displayval = document.getElementById('showmssg');
+var dtdob = document.getElementById('dob');
+
  function displayVisitor(e)
  {
 
-    console.log("ydrdtdtyy");
+    let dobdate = new Date(dtdob.value);
+    let weekday = dobdate.getDay();
+    var maleselected = document.getElementById("male").checked;
+    var femaleselected = document.getElementById("female").checked;
+    if(maleselected)
+    {
+        displayval.innerText = names[weekday].Male;
+    }
+    else if(femaleselected){
+        
+        displayval.innerText = names[weekday].Female;
+
+    }
+    else{
+        displayval.innerText = "Gender not selected";
+    }
+
+
+
+
+
+
 
  }           
 
-console.log(names);
+//console.log(names);
 
 
-Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
+//Day of the week (d) = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD ) mod 7
 
 /* where;
 
