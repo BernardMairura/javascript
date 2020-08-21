@@ -10,7 +10,7 @@
     <div class="container">
       <div class="jumbotron">
         <h2><u>AKAN NAMES</u></h2>
-        <h3>Did you know that you can use Akan names to know the day you were born?</h3>
+        <h3 class="text-success">Did you know that you can use Akan names to know the day you were born?</h3>
         <p>
           Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. Here are Ghanian day names.  
         </p>
@@ -63,7 +63,7 @@
           </tbody>
         </table>
 
-        <form action="css/bootstrap.css">
+        <form onsubmit="event.preventDefault(); displayVisitor();">
           <table>
             <table>Go ahead, give it a try.</table></br>
             <tr>
@@ -75,8 +75,6 @@
               </td>
             </tr>
           </table></br>    
-        </form>
-        <form action="css/bootstrap.css">
           <table>
             <tr>
               <dt>
@@ -87,13 +85,12 @@
               </dt>          
             </tr>    
           </table>    
-        </form>
-        <form action="date">
           <input type="date" oninvalid="alert('Please eneter the correct date format!');" name="datw" required>
           <input type="submit" value="Submit">
           <input type="reset">
         </form></br>
-        <p>Your Akan name is;
+        <p class="bg-info"><strong>Your Akan name is;</strong> 
+          <span id="showmssg"></span>
         </p>  
         <script src="index.js"></script>
     </div>
