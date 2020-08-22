@@ -6,7 +6,9 @@
 
 ## Description
 
-{This project demonstrates the use of types, Array, writing functions, control flow, and operators.Its a combination of html,css and javascript }
+{This project demonstrates the use of types, Array, writing functions, control flow, and operators.Its a combination of html,css and javascript.To achieve the results submitted via html, i have used JavaScript by creating an array from the names given.
+ 
+ On the linked page, i have added (flexbox page) to bring out it's functionalities by demonstrating its flexibility and superiority over floats.}
 
 ## Setup/Installation Requirements
 
